@@ -1,61 +1,152 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: #000;
-    color: #fff;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23c7c7c7' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
+body {
+  background: #000;
+  color: #fff;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23c7c7c7' fill-opacity='0.1' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
-
+a {
+  color: #fff;
+  text-decoration: none;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 /* NAVIGATION*/
 .nav-main {
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20 px 0;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20 px 0;
 }
 
 .nav-brand {
-    width: 50px;
+  width: 50px;
 }
 
 /*NAV LEFT*/
 .nav-main ul {
-    display: flex;
+  display: flex;
 }
 .nav-main ul li {
-    padding: 10px;
+  padding: 10px;
 }
 .nav-main ul li a {
-    padding: 6px;
+  padding: 6px;
 }
 .nav-main ul li a:hover {
-    border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 20pxS;
+  flex: 1;
+  margin-left: 20px;
 }
 
+/*SHOWCASE*/
+hr {
+  margin: 10px 0;
+}
+
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("./img/showcase2.jpg") no-repeat center center/cover;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+/* NEWS CARDS */
+.news-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.news-cards img {
+  width: 100%;
+  height: 180px;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.news-cards a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+.news-cards a:hover {
+	text-decoration: underline;
+}
+/* CARDS BANNER ONE */
+.cards-banner-one {
+	width: 100%;
+	height: 350px;
+	background: url('./img/tech-red.jpg') no-repeat center center/cover;
+	margin-bottom: 40px;
+}
+.cards-banner-one .content {
+	width: 40%;
+	padding: 90px 0 0 30px;
+	color: #ffffff;
+}
+.cards-banner-one p,
+.cards-banner-one h2 {
+  margin: 10px 0 20px 0;
+}
+
+/* CARDS BANNER TWO */
+.cards-banner-two {
+  width: 100%;
+  height: 350px;
+  background: url('./img/image-five.jpg') no-repeat center center/cover;
+}
+.cards-banner-two .content {
+	width: 50%;
+	padding: 100px 0 0 30px;
+}
